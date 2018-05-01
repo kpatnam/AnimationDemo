@@ -17,6 +17,8 @@ public class Mario extends Sprite {
 	// METHODS
 	public void walk(int dir) {
 		// WALK!
+		
+		super.moveByAmount(x, y);
 	}
 
 	public void jump() {
