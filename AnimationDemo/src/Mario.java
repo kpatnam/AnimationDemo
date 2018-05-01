@@ -18,7 +18,7 @@ public class Mario extends Sprite {
 	public void walk(int dir) {
 		// WALK!
 		
-		super.moveByAmount(x, y);
+		super.moveByAmount(x, dir*y);
 	}
 
 	public void jump() {
@@ -28,8 +28,8 @@ public class Mario extends Sprite {
 	public void act(ArrayList<Shape> obstacles) {
 		// FALL (and stop when a platform is hit)
 	
-		moveByAmount(0, 5);
-		if(this.intersects(obstacles))
+		//moveByAmount(0, 5);
+		//if(this.intersects(obstacles))
 	}
 
 
